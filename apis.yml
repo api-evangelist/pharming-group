@@ -1,25 +1,80 @@
 aid: pharming-group
+
 name: Pharming Group
-description: 'Pharming Group is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by sequoia-capital) and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Pharming Group is a biotechnology company focused on developing innovative RNA‑based therapeutics and vaccines. Founded in 2003, the firm leverages cutting‑edge mRNA technology to create treatments for rare genetic diseases and infectious diseases. With a portfolio that includes several pre‑clinical programs and partnerships with major pharmaceutical players, Pharming Group aims to transform the landscape of precision medicine through scalable, safe, and effective RNA solutions. The company operates globally, with research facilities in the United States and Europe, and maintains a strong commitment to scientific excellence and patient‑centric innovation.'
+
 url: https://raw.githubusercontent.com/api-evangelist/pharming-group/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-23 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-23'
+
 modified: '2026-10-23'
+
 tags:
 - Company
-apis: []
+- Biotechnology
+- RNA Therapeutics
+- Pharma
+- Innovation
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- sequoia-capital
+
 common:
+- type: Security
+  url: https://www.pharming.com/security-policy
+- type: SecurityTxt
+  url: well-known/pharming-group-security.txt
+- type: WellKnown
+  url: well-known/pharming-group-well-known.yml
+- type: Hosts
+  url: hosts/pharming-group-hosts.yml
+- type: Vendors
+  url: vendors/pharming-group-vendors.yml
+- type: TermsOfService
+  url: https://www.pharming.com/terms-of-use
+- type: SignUp
+  url: https://www.pharming.com/our-news/sign-up-for-pharming-s-egm-2020-webinar
+- type: PrivacyPolicy
+  url: https://www.pharming.com/privacy-center
+- type: VulnerabilityDisclosure
+  url: security/pharming-group-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/pharming-group-domain-security.yml
 - type: Website
   url: https://www.pharming.com/
+
+apis: []
+
+x-backed-by:
+- sequoia-capital
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-23'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://www.pharming.com/
+    status: 200
+x-enrichment:
+  date: '2026-10-23'
+  status: enriched
+  artifacts_added: 8
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

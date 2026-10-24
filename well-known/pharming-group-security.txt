@@ -1,0 +1,7 @@
+# Pharming Group N.V. Security Policy
+# https://securitytxt.org/
+
+Contact: mailto:security@pharming.com
+Expires: 2027-03-01T00:00:00.000Z
+Preferred-Languages: en, nl
+Policy: https://www.pharming.com/security-policy
